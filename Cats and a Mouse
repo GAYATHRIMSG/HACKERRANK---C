@@ -1,1 +1,31 @@
-
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  
+  int q;
+ // printf("Number of Queries:  ");
+  scanf("%d",&q);
+  while(q--)
+  {
+      
+  int catA,catB,mouseC;
+  // printf("Enther the position of cat A: ");
+   scanf("%d",&catA);
+  // printf("Enther the position of cat B: ");
+   scanf("%d",&catB);
+  // printf("Enther the position of Mouse C: ");
+   scanf("%d",&mouseC);
+   
+   int x=abs(catA-mouseC);
+   int y=abs(catB-mouseC);
+   
+   if(x<y)
+       printf("Cat A\n");
+   else if(y<x)
+       printf("Cat B\n");
+   else 
+      printf("Mouse C\n");
+  }      
+   return 0;
+}
